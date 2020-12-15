@@ -14,6 +14,35 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         Title
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#alt" aria-controls="alt"
+          aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span> <!-- 줄 3개짜리 버튼의 아이콘 생김 -->
+      </button> <!-- navbar-expand-?? 에 의해서 등장하는 시기가 다름 -->
+      <div class="collapse navbar-collapse" id="alt"> <!-- 이 아래부터 bar의 아이템 추가-->
+        <!-- collapse 타입으로 만들기 때문에 브라우저가 줄어드면 위치 이동, id=alt에 주목-->
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">
+            Home<span class="sr-only">(current)</span>
+            <!-- 현재 위치, 브라우저 상에서 하얗게 표시되고 있음, active와 sr-only 동시 필요 -->
+          </a>
+          <a class="nav-item nav-link" href="#">
+            Features
+          </a>
+          <a class="nav-item nav-link" href="#">
+            Pricing
+          </a>
+          <a class="nav-item nav-link" href="#">
+            Blog
+          </a>
+        </div>
+        <form class="form-inline">
+          <input class="form-control mr-2" type="search"
+            placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>      
     </nav>
     <div class="container my-2">
       <div class="jumbotron">
